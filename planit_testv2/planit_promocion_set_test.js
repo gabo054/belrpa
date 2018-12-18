@@ -12,7 +12,7 @@ promoSetData.add(['PromoSetAuto7','LB DELICE POUR','LB 3RO'])
 
 
 Data(promoSetData).Scenario('Login Administrador Promo Set',(I,generalPage,current) => {
-    generalPage.loginPlanit('ggaraycochea','Belcorp20183')
+    generalPage.loginPlanit('user','password')
     generalPage.setParametrosVistaPanel('5','1','2019','Promoción Set')
     generalPage.setParametrosPromocionSet('LBEL','201903')
     generalPage.agregarSetSimple(current.nombrePromoSet,current.producto1,current.producto2)
