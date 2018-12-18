@@ -12,7 +12,7 @@ ofertaMultipleData.add(['OferMultAuto7','LB DERMOCLARITE DIA'])
 
 
 Data(ofertaMultipleData).Scenario('Login Administrador Oferta Multiple', (I, generalPage,current) => {    
-    generalPage.loginPlanit('ggaraycochea','Belcorp20183')
+    generalPage.loginPlanit('User','Password')
     generalPage.setParametrosVistaPanel('5','1','2019','Oferta Múltiple')
     generalPage.setParametrosOfertaMultiple('LBEL','201903')
     generalPage.setProductoOfertaMultiple(current.nombreOfertaMultiple,current.producto,'0.8')
