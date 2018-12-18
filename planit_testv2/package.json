@@ -1,0 +1,21 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pris",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf output",
+    "test": "rimraf output & codeceptjs run-multiple parallel --grep Login --reporter mochawesome"
+  },
+  "devDependencies": {
+    "codeceptjs": "^1.1.6",
+    "puppeteer": "^1.0.0",
+    "codeceptjs-puppeteer": "*",
+    "mocha": "*",
+    "mochawesome-report-generator": "*",
+    "mochawesome": "^2.3.1",
+    "rimraf": "^2.6.2"
+  }
+}

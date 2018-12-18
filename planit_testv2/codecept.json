@@ -1,0 +1,33 @@
+{
+  "output": "./output",
+  "helpers": {
+    "Puppeteer": {
+      "windowSize": "1280x960",
+      "url": "http://pents500/planitayer",
+      "waitForAction":1200,
+      "show":true 
+    },
+    "Mochawesome": {}
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "generalPage": "./pages/general.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "./output/"
+    }
+  },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "name": "automation",
+  "multiple": {
+    "parallel": {
+        "chunks": 2
+    }
+  }
+  
+}
